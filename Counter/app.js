@@ -32,7 +32,7 @@ function updateSecs() {
     if (lastFiveSecs.length == 5) {
         lastFiveSecs.shift();
     }
-    if (clicksThisSec = 0) {
+    if (clicksThisSec == 0) {
         lastFiveSecs = [];
     }
     lastFiveSecs.push(clicksThisSec);
