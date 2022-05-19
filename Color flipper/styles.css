@@ -1,0 +1,40 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+}
+
+.heading {
+    background-color: black;
+    border-radius: 10px;
+    padding: 0 2rem;
+}
+
+.button {
+    border-radius: 40px;
+    border: 0;
+    background: white;
+    padding: 20px 45px;
+    margin-top: 20px;
+}
+
+.has-shadow {
+    box-shadow: 0 5px 15px 0px rgb(0 0 0 / 20%);
+}
