@@ -49,11 +49,11 @@ ul {
 a {
     text-decoration: none;
 }
-button, input[type="button"] {
+button, input[type="button"], a.button {
     border: none;
     border-radius: var(--radius);
 }
-button:hover, input[type="button"]:hover {
+button:hover, input[type="button"]:hover, a.button:hover {
     cursor: pointer;
 }
 h1,h2,h3,h4 {
@@ -169,4 +169,15 @@ header {
     bottom: -0.75rem;
     position: fixed;
     width: 100%;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
