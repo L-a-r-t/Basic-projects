@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterside Studios</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="https://waterside-studios.com/wp-content/uploads/2022/02/fond-1.png" alt="" class="hero__bg"/>
+            <div class="hero__img-container">
+                <img src="https://waterside-studios.com/wp-content/uploads/2022/02/Illustration-1.png" alt="Waterside Studios illustration" class="hero__img"/>
+            </div>
+            <div class="hero__text">
+                <h1 class="hero__title">Waterside Studios</h1>
+                <p>Working on your next favorite mobile game</p>
+                <button class="hero__cta js-modal-btn">Follow us!</button>    
+            </div>
+        </div>
+        <article class="presentation">
+            <h2>French studio, based in Bordeaux</h2>
+            <img src="https://waterside-studios.com/wp-content/uploads/2022/01/Ninja-rocher.png" alt="Ninja dropkicking a rock" class="presentation__img"/>
+            <p>As a young studio, we're aware that we still have to prove ourselves to the industry. Given that we're laser focused on our games no matter what, that's no big deal.</p>
+        </article>
+        <article>
+
+        </article>
+        <footer>
+
+        </footer>
+        <!-- modal -->
+        <div class="modal__overlay">
+            <div class="modal__container">
+                <h3>Follow us!</h3>
+                <p>Don't miss out on what we're up to, follow us on our socials and subscribe to our newsletter!</p>
+                <form action="">
+                    <label for="surname">Your first name</label><br/>
+                    <input type="text" name="surname" id="modal-surname"/><br/>
+                    <label for="email">Your email</label><br/>
+                    <input type="email" name="modal-email" id="modal-email"/><br/>
+                    <input class="modal__email-btn js-modal__email-btn" type="button" value="Subscribe"/>
+                </form>
+                <button class="modal__close-btn js-modal__close-btn">X</button>
+            </div>
+        </div>
+    </main>
+    <!-- script-->
+    <script src="app.js"></script>
+</body>
+</html>
