@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <!-- styles -->
+    <script src="https://kit.fontawesome.com/3532e63814.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <main>
+        <h1>Time until next <a href="https://wside.itch.io/double-jump" target="_blank">Double Jump!</a> update</h1>
+        <div class="counters">
+            <div class="counter__c">
+                <h2 class="counter" id="days">0</h2>
+                <p>days</p>
+            </div>
+            <div class="counter__c">
+                <h2 class="counter" id="hours">0</h2>
+                <p>hours</p>
+            </div>
+            <div class="counter__c">
+                <h2 class="counter" id="minutes">0</h2>
+                <p>minutes</p>
+            </div>
+            <div class="counter__c">
+                <h2 class="counter" id="seconds">0</h2>
+                <p>seconds</p>
+            </div>
+        </div>
+        <div class="settings">
+            <div class="settings__c">
+                <button class="settings__btn"><i class="fa-solid fa-gear"></i></button>
+                <div class="settings__modal">
+                    <input type="text" class="settings__name" placeholder="i.e Lea's Birthday">
+                    <input type="date" class="settings__date">
+                </div>
+            </div>
+            <p class="settings__error"></p>
+        </div>
+    </main>
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>

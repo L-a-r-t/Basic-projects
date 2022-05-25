@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+body {
+    margin: 0;
+    max-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: #127BC1;
+}
+
+button {
+    border: 0;
+    background-color: white;
+    padding: 0.8rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+}
+
+main {
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.counters {
+    margin-top: -1rem;
+    display: flex;
+}
+
+.counter__c {
+    margin: 2rem;
+}
+
+.counter,
+.counter__c p {
+    text-align: center;   
+    margin: 0; 
+}
+
+.counter__c p {
+    padding: 0 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.counter {
+    font-size: 3.5rem;
+}
+
+.settings {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.settings__c {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    padding: 0.2rem;
+    border-radius: 1.4rem;
+    transition: 0.3s ease-out;
+}
+
+.settings__c--open {
+    padding-left: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.settings__btn {
+    background-color: none;
+    border-radius: 50%;
+}
+
+.settings__modal {
+    display: flex;
+    width: 0;
+    visibility: collapse;
+    transition: 0.3s ease-out;
+}
+
+.settings input {
+    margin-right: 0.5rem;
+}
+
+.settings--open {
+    width: auto;
+    visibility: visible;
+}
+
+.settings__error {
+    background-color: red;
+    color: white;
+    margin-top: 0.5rem;
+    width: fit-content;
+    transform: 0.3s ease-out;
+}
