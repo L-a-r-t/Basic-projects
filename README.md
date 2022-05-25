@@ -5,6 +5,8 @@ Small projects in html/css/js, so far most of them are picked from John Smilga's
 > Click on the button to randomly switch the background color
 - Clicks counter
 > Counter that tracks total clicks since last refresh (no persistent storage yet), clicks per second and clicks last min
+- Countdown app
+> Gives the countdown until a date that can be chosen by the user
 ## WIP
 - Dashboard
 > Front-end only, provides weather, todos, quick access to favorite pages and ???
