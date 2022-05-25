@@ -1,0 +1,90 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@200;400;700&display=swap');
+
+/* Variables */
+:root {
+    --bg_main: white;
+    --bg_secondary: rgb(200,200,200);
+    --bg_rm-left: rgba(243, 147, 147, 0.5);
+    --bg_rm-right: rgba(188, 233, 149, 0.5);
+    --text_main: rgb(66,66,66);
+    --font_title: 'Montserrat', sans-serif;
+    --font_main: 'Poppins', sans-serif;
+    --shadow_light: 0 0.3rem 0.75rem rgba(0,0,0,0.1);
+}
+
+.dark-mode {
+    --bg_main: rgb(66,66,66);
+    --bg_secondary: rgb(128,128,128);
+    --text_main: white;
+}
+
+/* Global styles */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    max-height: 100vh;
+    background-color: var(--bg_main);
+    font-family: var(--font_title);
+}
+
+p {
+    font-family: var(--font_main);
+}
+
+/* Global classes */
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* Recipe match */
+.recipe-match {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.rm__grid {
+    height: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.rm__left {
+    background-color: var(--bg_rm-left);
+}
+
+.rm__right {
+    background-color: var(--bg_rm-right);
+}
+
+.rm__recipe-card {
+    box-shadow: var(--shadow_light);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.rm__r-img {
+    height: 40%;
+    min-width: 100%;
+}
+
+.rm__text-c {
+    padding: 1rem;
+    margin-top: -1.25rem;
+}
