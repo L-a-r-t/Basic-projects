@@ -46,6 +46,7 @@ async function loadRecipeCard(offset=0) {
     rmIndex++;
     localStorage.setItem('rmIndex', rmIndex);
     console.log(recipe);
+    if (recipe['image'] == null) {loadRecipeCard();}
     rmImg.setAttribute('src', recipe['image']);
     rmImg.setAttribute('alt', recipe['title']);
     rmTitle.textContent = recipe['title'];
