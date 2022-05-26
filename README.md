@@ -7,6 +7,8 @@ Small projects in html/css/js, so far most of them are picked from John Smilga's
 > Counter that tracks total clicks since last refresh (no persistent storage yet), clicks per second and clicks last min
 - [Countdown app](https://l-a-r-t.github.io/Basic-projects/Timer/)
 > Gives the countdown until a date that can be chosen by the user // TODO make responsive
+- [Recipe app](https://l-a-r-t.github.io/Basic-projects/Recipes/index.html)
+> Tinder-like choice of recipes, access (locally)saved recipes, dark-mode, recipes from the spoontacular API // TODO make responsive
 ## WIP
 - Dashboard
 > Front-end only, provides weather, todos, quick access to favorite pages and ???
