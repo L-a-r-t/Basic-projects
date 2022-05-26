@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes!</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="">Random recipes</a></li>
+            <li><a href="#" class="js-modal-load">Show list</a></li>
+            <li><a href="#" class="js-dark-mode">Dark mode</a></li>
+        </ul>
+    </nav>
+    <div class="main grid">
+        <div class="recipe">
+            <h3>Ingredients</h3>
+            <ul class="recipe__ingredients">
+                <li>Ingredient 1</li>
+                <li>Ingredient 2</li>
+                <li>Ingredient 3</li>
+                <li>Ingredient 4</li>
+                <li>Ingredient 5</li>
+                <li>Ingredient 6</li>
+            </ul>
+            <h3>Recipe</h3>
+            <div class="recipe__steps">
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <li>Step 4</li>
+            </div>
+        </div>
+        <div class="recap">
+            <img class="recap__img" src="" alt="">
+            <div class="recap__text">
+                <h3 class="recap__title"></h3>
+                <p><span class="recap__time left"></span><span class="recap__servings right"></span></p>
+                <br>
+                <p class="recap__credit left"></p>
+                <br>
+                <p class="recap__tags"></p>    
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <div class="modal__overlay hidden">
+        <button class="modal__quit">X</button>
+        <div class="modal__content">
+            <ul class="modal__list">
+                <li>Random recipes</li>
+                <li><a href="#" class="js-modal-load">Show list</a></li>
+                <li><a href="#" class="js-dark-mode">Dark mode</a></li>    
+            </ul>    
+        </div>
+    </div>
+    <!-- script -->
+    <script src="recipes.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+</html>
