@@ -11,7 +11,7 @@ const rmIngredients = document.querySelector('.rm__ingredients');
 const rmRemaining = document.querySelector('.rm__remaining');
 
 // Used as a way to know how many recipes are left to swipe for the day
-let rmIndex = localStorage.getItem('rmIndex') == null ? 0 : Number(localStorage.getItem('rmIndex'));
+let rmIndex = localStorage.getItem('rmIndex') == null ? 1 : Number(localStorage.getItem('rmIndex'));
 let recipe = {};
 
 console.log({rmIndex});
@@ -26,7 +26,7 @@ async function getRandomRecipes() {
         localStorage.setItem('lastAPIcall', Date.now());
         const respData = await resp.json();
         localStorage.setItem('rmRecipes', JSON.stringify(respData));
-        rmIndex = 0;
+        rmIndex = 1;
         localStorage.setItem('rmIndex', rmIndex);
         return respData;    
     }
