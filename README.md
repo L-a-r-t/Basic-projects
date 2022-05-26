@@ -1,5 +1,5 @@
 # Basic-projects
-Small projects in html/css/js, so far most of them are picked from John Smilga's [list of beginner javascript projects](https://github.com/john-smilga/javascript-basic-projects) and I then implement them by myself.
+Small projects in raw html/css/js, some are inspired by [list of beginner javascript projects](https://github.com/john-smilga/javascript-basic-projects) and I then implement them by myself. Will make another repo for projects using frontend libraries at some point.
 ## Projects list
 - [Random color flipper](https://l-a-r-t.github.io/Basic-projects/Color%20flipper/)
 > Click on the button to randomly switch the background color
