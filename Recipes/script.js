@@ -19,7 +19,7 @@ console.log({rmIndex});
 // Returns list of recipes to swipe, calls the API only if it has been 24hrs since the last call
 async function getRandomRecipes() {
     canCallAPI = localStorage.getItem('lastAPIcall') == null 
-        || Date.now() < new Date(localStorage.getItem('lastAPIcall')).valueOf() + 86400000; // This is the number of ms in a day
+        || Date.now() < new Date(Number(localStorage.getItem('lastAPIcall'))).valueOf() + 86400000; // This is the number of ms in a day
     if (canCallAPI) {
         const resp = await fetch('https://api.spoonacular.com/recipes/random?apiKey=f973f930658342eab4c4a9cac8eaebe4&number=50');
         console.log('called API');
