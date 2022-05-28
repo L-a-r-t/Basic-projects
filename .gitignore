@@ -1,1 +1,4 @@
 *.env
+\dashboard-app
+\dashboard
+\FCC
