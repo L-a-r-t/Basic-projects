@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import getRandomUser from '../api/randomuser';
 import Card from '../components/Card'
-import MainContainer from '../components/MainContainer';
-import { CardContainer } from './Freelances.styles';
+import { MainContainer, CardContainer } from './Freelances.styles';
 
 function Freelances() {
 
@@ -14,7 +13,8 @@ function Freelances() {
  
     return (
         <MainContainer>
-            <h1>Freelances :o</h1>
+            <h2>Trouvez votre prestataire</h2>
+            <p>Chez Shiny nous réunissons les meilleurs profils pour vous.</p>
             <CardContainer>
             {freelanceArr.map((profile) => (
                 <Card 

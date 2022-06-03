@@ -1,20 +1,36 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { Wrapper, QuestionID, Answers, Answer, NavLinksWrapper, NavLink } from './Survey.styles';
 
 function Survey() {
     const { idString } = useParams();
-    console.log(idString);
     const id = Number(idString);
     const previous = "/survey/" + (id - 1);
     const next = "/survey/" + (id + 1);
 
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        if (id === 10) {
+            navigate('/results');
+            return;
+        }
+        navigate(next);
+    }
+
     return (
-        <div>
-            <h1>Questionnaire!</h1>
-            <h2>Question #{id}</h2>
-            {id > 1 && <Link to={previous}>Précédent</Link>}
-            {id < 10 && <Link to={next}>Suivant</Link>}
-            {id === 10 && <Link to="/results">Résultats</Link>}
-        </div>
+        <Wrapper>
+            <QuestionID>Question {id}</QuestionID>
+            <p>Votre application doit-elle impérativement apparaître en premier dans les résultats de recherche ?</p>
+            <Answers>
+                <Answer onClick={handleClick}>Oui</Answer>
+                <Answer onClick={handleClick}>Non</Answer>
+            </Answers>
+            <NavLinksWrapper>
+                {id > 1 && <NavLink to={previous}>Précédent</NavLink>}
+                {id < 10 && <NavLink to={next}>Suivant</NavLink>}
+                {id === 10 && <NavLink to="/results">Résultats</NavLink>}
+            </NavLinksWrapper>
+        </Wrapper>
     )
 }
 

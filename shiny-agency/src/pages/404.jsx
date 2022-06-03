@@ -1,8 +1,12 @@
+import { Wrapper, Img404 } from './404.styles';
+import image from '../images/404.svg';
+
 function PageNotFound() {
     return (
-        <div>
-            <h1>Il n'y a pas page sinon le néant.</h1>
-        </div>
+        <Wrapper>
+            <h1>Oups...</h1>
+            <Img404 src={image} alt='Erreur 404' />
+        </Wrapper>
     )
 }
 

@@ -1,19 +1,24 @@
 import styled from 'styled-components';
 import colors from '../utils/styles/colors';
 
-export const Username = styled.span`
+export const Username = styled.p`
     font-size: 1rem;
+    width: 100%;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+    margin: -1rem 0 0 0;
+    color: ${colors.primary};
 `
 
 export const Container = styled.div`
+    width: 340px;
+    height: 340px;
+    padding: 2rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 1rem;
-    border-radius: 2rem;
+    justify-content: space-between;
     background-color: ${colors.backgroundLight};
     &:hover {
         cursor: pointer;
@@ -22,10 +27,13 @@ export const Container = styled.div`
 `
 
 export const Image = styled.img`
-    width: 90px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 `
 
-export const Country = styled.span`
+export const Country = styled.p`
     font-size: 1rem;
     text-align: center;
+    margin: 0 0 -1rem 0;
 `
