@@ -1,11 +1,11 @@
-import { Container, Username, Image, Country } from './Card.styles';
+import { Container, Name, Image, Job } from './Card.styles';
 
-function Card({username, img, country}) {
+function Card({name, img, job}) {
     return (
         <Container>
-            <Username>{username}</Username>
-            <Image src={img} alt={username + 'profile pic'}/>
-            <Country>{country}</Country>
+            <Name>{name}</Name>
+            <Image src={img} alt={name + 'profile pic'}/>
+            <Job>{job}</Job>
         </Container>
     )
 }

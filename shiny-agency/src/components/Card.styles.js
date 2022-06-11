@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import colors from '../utils/styles/colors';
 
-export const Username = styled.p`
+export const Name = styled.p`
     font-size: 1rem;
     width: 100%;
     font-weight: bold;
@@ -32,7 +32,7 @@ export const Image = styled.img`
     border-radius: 50%;
 `
 
-export const Country = styled.p`
+export const Job = styled.p`
     font-size: 1rem;
     text-align: center;
     margin: 0 0 -1rem 0;

@@ -14,3 +14,9 @@ export const CardContainer = styled.div`
     grid-template-rows: repeat(2, 1fr);
     width: fit-content;
 `
+
+export const Center = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
