@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import getRandomUser from '../api/randomuser';
+import getRandomUser from '../apis/randomuser';
 import Card from '../components/Card'
 import { MainContainer, CardContainer } from './Freelances.styles';
 
